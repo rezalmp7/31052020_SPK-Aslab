@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ASLAB</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Presensi Acara QR Code">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" href="img/website/logo.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+    <div class="container col-md-12 m-0 p-0 h-100 pb-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img class="pr-3" src="img/website/logo_text.png" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-0 ml-auto">
+                    <li class="nav-item pl-3 pr-3 pb-1 pt-1">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item pl-3 pr-3 pb-1 pt-1">
+                        <a class="nav-link" href="informasi.html">Informasi</a>
+                    </li>
+                    <li class="nav-item pl-3 pr-3 pb-1 pt-1">
+                        <a class="nav-link" href="pengumuman.html">Pengumuman</a>
+                    </li>
+                    <li class="nav-item pl-3 pr-3 pb-1 pt-1 active">
+                        <a class="nav-link" href="login.html">Masuk | Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-md-12 m-0 p-0 mt-5 pt-5 p-2" id="login">
+            <div class="col-md-6 offset-md-3 p-5 shadow">
+                <h2 class="text-center mb-5">Sign In</h2>
+                <form method="POST" action="#">
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="text" placeholder="Username">
+                    </div>
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="password" placeholder="Password">
+                    </div>
+                    <a href="#" id="toRegister">Belum Daftar?</a>
+                    <div class="col-md-12 clearefix">
+                        <button class="float-right btn btn-primary rounded-pill pl-4 pr-4" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-12 m-0 p-0 mt-5 pt-5 p-2" id="register">
+            <div class="col-md-6 offset-md-3 p-5 shadow">
+                <div class="col-md-12">
+                    <a href="#" id="toLogin"><i class="zmdi zmdi-arrow-left"></i></a>
+                </div>
+                <h2 class="text-center mb-5">Sign Up</h2>
+                <form method="POST" action="#">
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="text" placeholder="Username">
+                    </div>
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="text" placeholder="Email">
+                    </div>
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="password" placeholder="Password">
+                    </div>
+                    <div class="border-form p-2 m-0 mt-4 mb-4 pl-5 rounded-pill">
+                        <input class="col-md-12 form-control" type="password" placeholder="Repeat Password">
+                    </div>
+                    <div class="col-md-12 clearefix">
+                        <button class="float-right btn btn-primary rounded-pill pl-4 pr-4" type="submit">Daftar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 m-0 p-2" id="footer">
+        <span>Universitas PGRI Semarang</span><span class="float-right">2020</span>
+    </div>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>

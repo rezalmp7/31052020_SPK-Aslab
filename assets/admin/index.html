@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ASLAB</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Presensi Acara QR Code">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" href="../img/website/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/style_admin.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../vendor/calendar/src/mini-event-calendar.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+    <div class="container col-md-12 m-0 p-0 h-100 row">
+        <nav class="shadow p-0 m-0">
+            <div class="col-md-12 m-0 pb-3" id="logo">
+                <a class="navbar-brand shadow p-2 rounded-lg" href="#">
+                    <img class="" src="../img/website/logo.png" height="30" alt="">
+                </a>
+            </div>
+            <div class="col-md-12 m-0 p-1">
+                <ul class="navbar-nav mr-0 ml-auto">
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="index.html"><i class="zmdi zmdi-home"></i><br>Home</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="berita.html"><i class="zmdi zmdi-collection-text"></i><br>Upload
+                            Berita</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="pendaftar.html"><i class="zmdi zmdi-accounts"></i><br>Data
+                            Pendaftar</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="nilai.html"><i class="zmdi zmdi-grid"></i><br>Data Nilai
+                            Pendaftar</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="kriteria.html"><i class="zmdi zmdi-view-toc"></i><br>Data
+                            Kriteria</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="perhitungan.html"><i class="zmdi zmdi-functions"></i><br>Hasil
+                            Perhitungan</a>
+                    </li>
+                    <li class="nav-item text-center pl-1 pr-1 pb-1 pt-1">
+                        <a class="nav-link" href="input.html"><i class="zmdi zmdi-comment-edit"></i><br>Input Nilai
+                            Peserta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col m-0 p-0 p-2" id="dashboard">
+            <div class="col-md-12 m-0 p-2 pl-5 pr-5 row" id="head">
+                <div class="pt-3 p-0 pr-3" id="breadcrumb">
+                    Dashboard
+                </div>
+                <div class="col">
+                    <div class="dropdown float-right" id="profil">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle" src="../img/website/photo.png">
+                        </a>
+                    
+                        <div class="dropdown-menu rounded-lg dropdown-menu-right p-1" aria-labelledby="dropdownMenuLink">
+                            <div class="col-md-12 m-0 p-1"><i class="zmdi zmdi-email"></i> example@email.com</div>
+                            <div class="col-md-12 m-0 p-0"><a href="#" class="p-1"><i class="zmdi zmdi-edit"></i> Edit Profil</a></div>
+                            <div class="col-md-12 m-0 p-0"><a href="#" class="p-1"><i class="zmdi zmdi-long-arrow-return"></i> Sign Out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 m-0 p-2" id="body">
+
+                <div class="col-10 offset-1 mt-5 pt-5 pb-1 p-2 row" id="top">
+                    <div class="col-6 p-2 pr-md-5 pl-md-5 h-100 ">
+                        <div class="col-md-12 rounded-lg m-0 p-2 row" id="total_peserta">
+                            <div><i class="zmdi zmdi-accounts-alt"></i></div>
+                            <div class="col text-right">Total<br>8 Peserta</div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-2 pr-md-5 pl-md-5 h-100 ">
+                        <div class="col-md-12 rounded-lg m-0 p-2 row" id="waktu">
+                            <div><i class="zmdi zmdi-calendar-close"></i></div>
+                            <div class="col text-right">Pendaftaran ditutup<br>DD hari lagi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-1 mt-1 p-2 row rounded-lg" id="pendaftar">
+                    <h4>Peserta seleksi</h4>
+                    <div class="col-12 pl-5 pr-5">
+                        <div class="col-md-12" id="scroll">
+                            <div>
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+                                <img class="rounded-circle m-1" src="../img/website/photo.png">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-stretch col-10 offset-1 mt-1 p-2 row" id="berita">
+                    <div class="align-self-stretch col-4 p-2">
+                        <div>
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                    <div class="align-self-stretch col-8 p-2">
+                        <div class="col-md-12 m-0 p-3 h-100"  id="berita-body">
+                            <h5>Berita Terbaru</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Judul</th>
+                                        <th scope="col">Tanggal</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Test</td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a class="btn btn-primary rounded-circle btn-aksi"><i class="zmdi zmdi-search-in-file"></i></a>
+                                            <a class="btn btn-warning rounded-circle btn-aksi"><i class="zmdi zmdi-edit"></i></a>
+                                            <a class="btn btn-danger rounded-circle btn-aksi"><i class="zmdi zmdi-delete"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Test</td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a class="btn btn-primary rounded-circle btn-aksi"><i class="zmdi zmdi-search-in-file"></i></a>
+                                            <a class="btn btn-warning rounded-circle btn-aksi"><i class="zmdi zmdi-edit"></i></a>
+                                            <a class="btn btn-danger rounded-circle btn-aksi"><i class="zmdi zmdi-delete"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Test</td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a class="btn btn-primary rounded-circle btn-aksi"><i class="zmdi zmdi-search-in-file"></i></a>
+                                            <a class="btn btn-warning rounded-circle btn-aksi"><i class="zmdi zmdi-edit"></i></a>
+                                            <a class="btn btn-danger rounded-circle btn-aksi"><i class="zmdi zmdi-delete"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 m-0 p-2 mt-4" id="footer">
+                    <span>Universitas PGRI Semarang</span><span class="float-right">2020</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="../vendor/calendar/src/mini-event-calendar.min.js"></script>
+    <script type="text/javascript" src="../js/main_admin.js"></script>
+
+    <script>
+        var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+        var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+
+        // All dates should be provided in timestamps
+        var sampleEvents = [
+            {
+                title: "Soulful sundays bay area",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "https://www.eventbrite.com/e/soulful-sundays-bay-area-edition-tickets-55214242285?aff=ehomecard"
+            },
+            {
+                title: "Soulful sadas bay area",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "https://www.eventbrite.com/e/soulful-sundays-bay-area-edition-tickets-55214242285?aff=ehomecard"
+            },
+            {
+                title: "London Comicon",
+                date: new Date().getTime(), // Today
+                link: "https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch"
+            },
+            {
+                title: "Youth Athletic Camp",
+                date: someDaynextMonth, // Some day as today, next month
+                link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
+            }
+        ];
+
+        $(document).ready(function () {
+            $("#calendar").MEC({
+                events: sampleEvents
+            });
+
+            // Make calendar start on monday
+            $("#calendar2").MEC({
+                from_monday: true,
+                events: sampleEvents
+            });
+        });
+    </script>
+
+</body>
+
+</html>

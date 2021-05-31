@@ -1,0 +1,259 @@
+
+html
+{
+    height:100%;
+}
+body
+{
+    min-height: 100%;
+    position: relative;
+}
+
+.btn-aksi
+{
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+nav
+{
+    width: 75px;
+}
+nav #logo
+{
+    border-bottom: 2px solid #0202D7;
+}
+nav ul li a
+{
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: #686868;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover
+{
+    color: #0202D7;
+}
+nav ul li a i
+{
+    font-size: 30px;
+}
+#footer 
+{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+/* LOGIN */
+html, body#login
+{
+    min-height: 100%;
+}
+#login
+{
+    background: linear-gradient(128deg, rgba(2,2,215,1) 0%, rgba(3,3,112,1) 100%);
+}
+#login #body
+{
+    background-color: #0202D7;
+    border-radius: 20px;
+}
+#login #body h4
+{
+    color: white;
+}
+#login #body .btn-login
+{
+    background-color: white;
+    color: #0202D7;
+    border: 0px solid black;
+    transition: all 0.3s ease;
+}
+#login #body .btn-login:hover
+{
+    background-color: #020256;
+}
+
+#head #breadcrumb
+{
+    border-bottom: 2px solid #0202D7;
+}
+#head #profil img
+{
+    height: 30px;
+    
+}
+#head #profil .dropdown-toggle
+{
+    transition: all 0.3s ease;
+}
+#head #profil .dropdown-toggle:hover
+{
+    background-color: #0202D7;
+}
+#head #profil .dropdown-menu
+{
+    border: 0px solid black !important;
+    background-color: #0202D7;
+    color: white;
+    padding: 5px;
+}
+#head #profil .dropdown-menu>div
+{
+    border-bottom: 2px solid #0202D7;
+    font-size: 12px;
+}
+#head #profil .dropdown-menu>div>a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s ease;
+}
+#head #profil .dropdown-menu>div>a:hover
+{
+    background-color: teal;
+}
+/* END LOGIN */
+
+/* DASHBOARD */
+#dashboard
+{
+    height: 100%;
+    overflow: hidden;
+}
+#dashboard #body #top #total_peserta
+{
+    background-color: #0202D7;
+    color: white;
+    font-family: 'Segoe UI';
+    border-radius: 20px;
+}
+#dashboard #body #top #total_peserta i
+{
+    font-size: 60px;
+}
+#dashboard #body #top #waktu
+{
+    background-color: #E4013D;
+    color: white;
+    font-family: 'Segoe UI';
+    border-radius: 20px;
+}
+#dashboard #body #top #waktu i
+{
+    font-size: 60px;
+}
+#dashboard #body #pendaftar
+{
+    border: 1px solid #0202D7;
+    border-radius: 20px;
+}
+#dashboard #body #pendaftar #scroll
+{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#dashboard #body #pendaftar #scroll>div
+{
+    width: auto;
+}
+#dashboard #body #pendaftar #scroll img
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #0202D7;
+}
+#dashboard #body #berita #calender-body
+{
+    background-color: #E4013D;
+    color: white;
+    border-radius: 20px;
+}
+#dashboard #body #berita #berita-body
+{
+    border: 1px solid #E4013D;
+    border-radius: 20px;
+}
+#dashboard #body #berita #calendar
+{
+    background: #E4013D;
+    border-radius: 20px;
+}
+#dashboard #body #berita #calendar #calTbody
+{
+    color: black
+}
+#dashboard #body #berita #calendar #calTbody .current
+{
+    background: white;
+}
+#dashboard #body #berita #calendar #calTbody .focused
+{
+    background: rgb(177, 177, 177);
+}
+[id^=calendar], [id^=calendar] + h3{
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+	[id^=calendar],
+	[id^=calendar] + h3{
+		width: 100%;
+		max-width: 400px;
+		margin: 1em auto;
+	}
+
+	[id^=calendar] + h3{
+		display: block;
+		margin-bottom: 2em;
+	}
+}
+/* END DASHBOARD */
+
+/* TAB */
+#berita
+{
+    height: 100%;
+}
+#berita #body #table
+{
+    border: 1px solid #F7798E;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(177, 177, 177);
+}
+/* END TAB */
+
+/* PERHITUNGAN */
+#perhitungan #body #myTab
+{
+    border-bottom-color: #020256;
+}
+#perhitungan #body #myTab li a
+{
+    color: #686868;
+    font-weight: bold;
+    font-size: 12px;
+}
+#perhitungan #body #myTab li a:hover
+{
+    
+    border-top-color: #020256;
+    border-left-color: #020256;
+    border-right-color: #020256;
+    background-color: white;
+}
+#perhitungan #body #myTab li a.active
+{
+    color: #020256;
+    border-top-color: #020256;
+    border-left-color: #020256;
+    border-right-color: #020256;
+    background-color: white;
+}
+/* END PERHITUNGAN */
